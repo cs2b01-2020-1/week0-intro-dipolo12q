@@ -9,12 +9,8 @@ def compare_genom(genom1, genom2):
     list.append(open(genom1).readlines())
     list.append(open(genom2).readlines())
     delete(list)
-    t1 = ""
-    for i in list[0]:
-        t1 += i
-    t2 = ""
-    for i in list[1]:
-        t2 += i
+    t1 = "".join(list[0])
+    t2 = "".join(list[1])
     if len(t1) < len(t2):
         M = t2
         m = t1
